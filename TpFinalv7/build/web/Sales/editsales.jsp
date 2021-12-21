@@ -51,8 +51,8 @@
                         </li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Ventas</a>
                             <div class="dropdown-menu" style="background: rgb(187,99,53);">
-                                <form action="./SvLstVta" method="GET">
-                                    <a href="./SvLstVta" class="SUBMIT dropdown-item">Listado</a>
+                                <form action="../SvLstVta" method="GET">
+                                    <a href="../SvLstVta" class="SUBMIT dropdown-item">Listado</a>
                                 </form>
                                 <form action="../SvVenta" method="GET">
                                     <a class="dropdown-item" href="../SvVenta" style="text-decoration: none;">Agregar</a>
@@ -133,7 +133,7 @@
                                             <tbody>
                                                 <%
                                                     Venta ventaMod = (Venta) request.getSession().getAttribute("venta");
-                                                    String idVenta=String.valueOf(ventaMod.getIdVenta());
+                                                    String idVenta = String.valueOf(ventaMod.getIdVenta());
                                                     Cliente clienteMod = ventaMod.getCliente();
                                                     List<Cliente> listaClientes = (List) request.getSession().getAttribute("listaClientes");
                                                     for (Cliente cliente : listaClientes) {
@@ -155,9 +155,13 @@
                                                             estado = "activo";
                                                         }
                                                         String clienteChecked = "";
-                                                        if (cod.equals(clienteMod.getCod_cliente())) {
-                                                            clienteChecked = "checked";
+                                                        System.out.println("Cod: " + cod + "\nCod2: " + clienteMod.getCod_cliente());
+                                                        if (cod != null) {
+                                                            if (cod.equals(clienteMod.getCod_cliente())) {
+                                                                clienteChecked = "checked";
+                                                            }
                                                         }
+
                                                 %>
                                                 <tr>
                                                     <td style="width: 2%;"><%=cod%></td>

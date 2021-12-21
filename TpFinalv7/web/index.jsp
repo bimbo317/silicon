@@ -96,7 +96,7 @@
             <div class="container text-nowrap">
                 <div class="row justify-content-center justify-content-xl-center text-center">
                     <div class="col-auto col-md-4 col-xl-2" style="height: 190px;background-color: #ffffff;margin: 15px;border-radius: 10%;"><a href="./Sales/lstsales.jsp" style="text-decoration: none;">
-                            <form action="./SvLstVta" method="GET">
+                            <form action="../SvLstVta" method="GET">
                                     <a href="./SvLstVta" style="text-decoration: none;">
                                 </form>
                             <div style="height: 190px;width: 220px;margin: -12px;margin-left: -10px;margin-top: 0;margin-right: 0;margin-bottom: 0;"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="material-icons fa-stack-1x fa-inverse" style="font-size: 80px;padding: 25px;color: rgb(178,154,54);">attach_money</i></span>

@@ -43,8 +43,8 @@
                         </li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Ventas</a>
                             <div class="dropdown-menu" style="background: rgb(187,99,53);">
-                                <form action="./SvLstVta" method="GET">
-                                    <a href="./SvLstVta" class="SUBMIT dropdown-item">Listado</a>
+                                <form action="../SvLstVta" method="GET">
+                                    <a href="../SvLstVta" class="SUBMIT dropdown-item">Listado</a>
                                 </form>
                                 <form action="../SvVenta" method="GET">
                                     <a class="dropdown-item" href="../SvVenta" style="text-decoration: none;">Agregar</a>
